@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PantauCovid19", "PantauCovid19.csproj", "{91F9CAA8-8771-45E7-847C-035C4B18CD18}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup Pantau COVID-19", "Setup Pantau COVID-19\Setup Pantau COVID-19.vdproj", "{CFF4CC44-4CC2-459F-AF4C-13B5B0540EC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91F9CAA8-8771-45E7-847C-035C4B18CD18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F9CAA8-8771-45E7-847C-035C4B18CD18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F9CAA8-8771-45E7-847C-035C4B18CD18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F9CAA8-8771-45E7-847C-035C4B18CD18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF4CC44-4CC2-459F-AF4C-13B5B0540EC8}.Debug|Any CPU.ActiveCfg = Debug
+		{CFF4CC44-4CC2-459F-AF4C-13B5B0540EC8}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09D2F039-0C2F-48F2-AF69-FE40582A8197}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91F9CAA8-8771-45E7-847C-035C4B18CD18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp4</RootNamespace>
+    <AssemblyName>WindowsFormsApp4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://sourceforge.net/projects/pantau-covid-19/</InstallUrl>
+    <SupportUrl>https://sourceforge.net/projects/pantau-covid-19/support</SupportUrl>
+    <ErrorReportUrl>https://sourceforge.net/projects/pantau-covid-19/support</ErrorReportUrl>
+    <ProductName>Pantau COVID-19</ProductName>
+    <PublisherName>WeabooCode</PublisherName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>gummy_virus_iYl_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E85EE45D1497B36ACC4312B73F42E73F40B40638</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PantauCovid19_3_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=2.0.1.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>packages\GMap.NET.Core.2.0.1\lib\net40\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=2.0.1.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>packages\GMap.NET.WinForms.2.0.1\lib\net40\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsPresentation, Version=2.0.1.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>packages\GMap.NET.WinPresentation.2.0.1\lib\net40\GMap.NET.WindowsPresentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>D:\PBO\TA\TugasAkhir\GunaUI\Guna.UI2_WinFroms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.Core.1.0.113.1\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.EF6.1.0.113.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.Linq.1.0.113.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection\IRequestWeb.cs" />
+    <Compile Include="Connection\RequestWeb.cs" />
+    <Compile Include="Model\Attributes.cs" />
+    <Compile Include="Model\Attributess.cs" />
+    <Compile Include="Model\DataGlobal.cs" />
+    <Compile Include="Model\DataIndonesia.cs" />
+    <Compile Include="Model\DataProvinsi.cs" />
+    <Compile Include="UI\Donasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Donasi.Designer.cs">
+      <DependentUpon>Donasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Hotline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Hotline.Designer.cs">
+      <DependentUpon>Hotline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModernNotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModernNotification.Designer.cs">
+      <DependentUpon>ModernNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PantauCovid19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PantauCovid19.Designer.cs">
+      <DependentUpon>PantauCovid19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Tentang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Tentang.Designer.cs">
+      <DependentUpon>Tentang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VirusMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VirusMap.Designer.cs">
+      <DependentUpon>VirusMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Website.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Website.Designer.cs">
+      <DependentUpon>Website.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Url\APIUrl.cs" />
+    <EmbeddedResource Include="UI\Donasi.resx">
+      <DependentUpon>Donasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Hotline.resx">
+      <DependentUpon>Hotline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModernNotification.resx">
+      <DependentUpon>ModernNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PantauCovid19.resx">
+      <DependentUpon>PantauCovid19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\Tentang.resx">
+      <DependentUpon>Tentang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VirusMap.resx">
+      <DependentUpon>VirusMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Website.resx">
+      <DependentUpon>Website.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_hot_line_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_donate_90px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_info_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_globe_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_sad_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_smiling_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_crying_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kementriankesehatan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-dki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jatengnew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jatim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jabar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yogya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_open_in_browser_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gummy-virus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gummy_virus_iYl_icon.ico" />
+    <None Include="Resources\icons8_map_marker_100px_1.png" />
+    <None Include="Resources\duafha.png" />
+    <None Include="Resources\PMI.png" />
+    <None Include="Resources\kitabisa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\System.Data.SQLite.Core.1.0.113.1\build\net46\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\System.Data.SQLite.Core.1.0.113.1\build\net46\System.Data.SQLite.Core.targets'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\System.Data.SQLite.Core.1.0.113.1\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('packages\System.Data.SQLite.Core.1.0.113.1\build\net46\System.Data.SQLite.Core.targets')" />
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
