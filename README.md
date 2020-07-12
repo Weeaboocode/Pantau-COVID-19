@@ -1,6 +1,9 @@
 # Pantau-COVID-19
 Pantau COVID-19 is an application to monitor the corona virus in Indonesia and the GUI-based world. Pantau COVID-19 also has a very comfortable display for its users.
 
+### UI ###
+<img src="https://i.imgur.com/gra4xNk.png"/>
+
 ### First Step ###
 
 * Have visual studio (Not visual studio code)
@@ -13,3 +16,6 @@ Pantau COVID-19 is an application to monitor the corona virus in Indonesia and t
 * Visual Studio 2019: https://visualstudio.microsoft.com/vs/
 * GMaps: https://github.com/judero01col/GMap.NET
 * Kawal Korona: https://kawalcorona.com/
+
+### Information ###
+Now Pantau COVID-19 can be installed on your computer, please download it here : https://sourceforge.net/projects/pantau-covid-19/
