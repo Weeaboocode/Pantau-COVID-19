@@ -19,3 +19,4 @@ Pantau COVID-19 is an application to monitor the corona virus in Indonesia and t
 
 ### Information ###
 Now Pantau COVID-19 can be installed on your computer, please download it here : https://sourceforge.net/projects/pantau-covid-19/
+Youtube Demo : https://www.youtube.com/watch?v=9_Tgo8g14Xc
